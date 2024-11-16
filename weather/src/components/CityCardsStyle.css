@@ -1,0 +1,80 @@
+.city-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 50px;
+    gap: 10px;
+
+}
+
+.city-div .card {
+    width: 80%;
+    height: 200px;
+    gap: 0px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.city-div .card img {
+    width: fit-content;
+    height: 50%;
+    border-radius: 10px;
+}
+.city-div .card .weather-info {
+    width: fit-content;
+    color: rgb(0, 0, 0);
+}
+
+
+.city-div h1 {
+    font-size: 15px;
+    width: fit-content;
+}
+
+@media (max-width: 900px) {
+    .city-div {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .city-div .card {
+        width: 30%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .city-div .card {
+        width: 40%;
+    }
+}
+
+@media(min-width: 670px) and (max-width: 870px) {
+    .city-div .card {
+        width:50%;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .city-div .card {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .city-div .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .city-div .card {
+        width: 100%;
+    }
+}

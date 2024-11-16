@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80px;
+    box-shadow: 0 1px 5px rgb(54, 54, 57);
+    backdrop-filter: blur(3px);
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.163);
+}
+.weather-info{
+    width: 100%;
+}
+
+img {
+    width: 50%;
+    height:50%;
+    border-radius: 30px;
+}
+
+.loading {
+    color: #000000; 
+    text-align: center;
+    padding: 10px; 
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.ikon{
+    color: white;
+    animation: rotation 3s infinite linear;
+}
+
+
+@keyframes rotation{
+    from{
+      transform:rotate(0deg);
+    }
+    
+    to{
+      transform:rotate(360deg);
+    }
+  }
+
+
