@@ -16,7 +16,7 @@ const App = () => {
 
         try {
             console.log(cityName);
-            const response = await fetch("http://localhost:5001/", {
+            const response = await fetch("https://weather-gz3y.onrender.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -47,7 +47,7 @@ const App = () => {
             try {
                 const weatherResponses = await Promise.all(
                     predefinedCities.map((city) =>
-                        fetch("http://localhost:5001/", {
+                        fetch("https://weather-gz3y.onrender.com", {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/x-www-form-urlencoded",
