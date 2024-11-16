@@ -38,7 +38,8 @@ app.post("/", (req, res) => {
     });
 });
 
+let port = process.env.PORT;
 
-app.listen(5001, () => {
-    console.log("server is running on port 5001")
+app.listen(port|| 5001, () => {
+    console.log("server is running on" + port);
 })
