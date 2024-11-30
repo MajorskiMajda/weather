@@ -57,7 +57,7 @@ const App = () => {
                     )
                 );
                 setPredefinedWeather(weatherResponses.map((data, index) => ({
-                    cityName: predefinedCities[index], // Add the city name to the response data
+                    cityName: predefinedCities[index], 
                     description: data.description,
                     temperature: data.temperature,
                     iconUrl: data.iconUrl,
